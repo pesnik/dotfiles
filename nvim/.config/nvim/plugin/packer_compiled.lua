@@ -164,11 +164,6 @@ _G.packer_plugins = {
     path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/molokai",
     url = "https://github.com/tomasr/molokai"
   },
-  neovim = {
-    loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/neovim",
-    url = "https://github.com/rose-pine/neovim"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -189,6 +184,11 @@ _G.packer_plugins = {
     path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -208,6 +208,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rose-pine"] = {
+    config = { "\27LJ\2\n\v\0\3\3\0\0\0\1K\0\1\0ö\5\1\0\4\0\17\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0024\3\0\0=\3\n\0024\3\0\0=\3\v\0023\3\f\0=\3\r\2B\0\2\0016\0\14\0009\0\15\0'\2\16\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\21before_highlight\0\21highlight_groups\fpalette\vgroups\1\0\25\14git_stage\tiris\15git_rename\tpine\14git_merge\tiris\15git_ignore\nmuted\14git_dirty\trose\15git_delete\tlove\15git_change\trose\fgit_add\tfoam\tinfo\tfoam\twarn\tgold\ttodo\trose\tnote\tpine\nerror\tlove\thint\tiris\npanel\fsurface\tlink\tiris\vborder\nmuted\ah6\tfoam\ah5\tpine\ah4\tgold\ah3\trose\ah2\tfoam\ah1\tiris\18git_untracked\vsubtle\rgit_text\trose\vstyles\1\0\3\17transparency\1\vitalic\1\tbold\2\venable\1\0\3\15migrations\2\22legacy_highlights\2\rterminal\2\1\0\n%extend_background_behind_borders\2\25dim_inactive_windows\1\21highlight_groups\0\17dark_variant\tmain\21before_highlight\0\fvariant\tauto\fpalette\0\vgroups\0\vstyles\0\venable\0\nsetup\14rose-pine\frequire\0" },
+    loaded = true,
+    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   },
   sonokai = {
     loaded = true,
@@ -282,6 +288,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: rose-pine
+time([[Config for rose-pine]], true)
+try_loadstring("\27LJ\2\n\v\0\3\3\0\0\0\1K\0\1\0ö\5\1\0\4\0\17\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0024\3\0\0=\3\n\0024\3\0\0=\3\v\0023\3\f\0=\3\r\2B\0\2\0016\0\14\0009\0\15\0'\2\16\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\21before_highlight\0\21highlight_groups\fpalette\vgroups\1\0\25\14git_stage\tiris\15git_rename\tpine\14git_merge\tiris\15git_ignore\nmuted\14git_dirty\trose\15git_delete\tlove\15git_change\trose\fgit_add\tfoam\tinfo\tfoam\twarn\tgold\ttodo\trose\tnote\tpine\nerror\tlove\thint\tiris\npanel\fsurface\tlink\tiris\vborder\nmuted\ah6\tfoam\ah5\tpine\ah4\tgold\ah3\trose\ah2\tfoam\ah1\tiris\18git_untracked\vsubtle\rgit_text\trose\vstyles\1\0\3\17transparency\1\vitalic\1\tbold\2\venable\1\0\3\15migrations\2\22legacy_highlights\2\rterminal\2\1\0\n%extend_background_behind_borders\2\25dim_inactive_windows\1\21highlight_groups\0\17dark_variant\tmain\21before_highlight\0\fvariant\tauto\fpalette\0\vgroups\0\vstyles\0\venable\0\nsetup\14rose-pine\frequire\0", "config", "rose-pine")
+time([[Config for rose-pine]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
