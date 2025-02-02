@@ -3,7 +3,7 @@
 # Variables
 DOTFILES_DIR="$HOME/.dotfiles"
 BACKUP_DIR="$HOME/.dotfiles_backup"
-STOW_PACKAGES=("nvim" "zsh" "oh-my-zsh" "tmux")
+STOW_PACKAGES=("vim" "nvim" "zsh" "oh-my-zsh" "tmux")
 
 # Create backup directory
 echo "Creating backup directory at $BACKUP_DIR..."
