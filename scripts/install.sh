@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Exit on error
-set -e
-
 # Variables
 DOTFILES_DIR="$HOME/.dotfiles"
 BACKUP_DIR="$HOME/.dotfiles_backup"
@@ -29,8 +26,13 @@ for package in "${STOW_PACKAGES[@]}"; do
             mv "$HOME/$link" "$BACKUP_DIR/$link"
         fi
     done
-    # Stow the package
-    stow -t "$HOME" -v "$package"
+
+    # Stow the package with error handling
+    if ! stow -t "$HOME" -R "$package" 2>/dev/null; then
+        echo "Warning: Failed to stow $package completely. Continuing with next package..."
+    else
+        echo "Successfully stowed $package"
+    fi
 done
 
 echo "Installation complete! Your configurations are now set up."
