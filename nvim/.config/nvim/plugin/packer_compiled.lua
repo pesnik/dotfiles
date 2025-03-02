@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/r_hasan/.cache/nvim/packer_hererocks/2.1.1736781742/share/lua/5.1/?.lua;/Users/r_hasan/.cache/nvim/packer_hererocks/2.1.1736781742/share/lua/5.1/?/init.lua;/Users/r_hasan/.cache/nvim/packer_hererocks/2.1.1736781742/lib/luarocks/rocks-5.1/?.lua;/Users/r_hasan/.cache/nvim/packer_hererocks/2.1.1736781742/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/r_hasan/.cache/nvim/packer_hererocks/2.1.1736781742/lib/lua/5.1/?.so"
+local package_path_str = "/home/laboratory/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?.lua;/home/laboratory/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?/init.lua;/home/laboratory/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?.lua;/home/laboratory/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/laboratory/.cache/nvim/packer_hererocks/2.1.1703358377/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,213 +76,213 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["base16-vim"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/base16-vim",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/base16-vim",
     url = "https://github.com/chriskempson/base16-vim"
   },
   ["beacon.nvim"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/beacon.nvim",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/beacon.nvim",
     url = "https://github.com/danilamihailov/beacon.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-cmdline"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["cmp-path"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/cmp-path",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["cphelper.nvim"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/cphelper.nvim",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/cphelper.nvim",
     url = "https://github.com/p00f/cphelper.nvim"
   },
   darcula = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/darcula",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/darcula",
     url = "https://github.com/doums/darcula"
   },
   ["diffview.nvim"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["goyo.vim"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/goyo.vim",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/goyo.vim",
     url = "https://github.com/junegunn/goyo.vim"
   },
   gruvbox = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/gruvbox",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/morhetz/gruvbox"
   },
   ["gruvbox-material"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
   },
   kommentary = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/kommentary",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/kommentary",
     url = "https://github.com/b3nj5m1n/kommentary"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   molokai = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/molokai",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/molokai",
     url = "https://github.com/tomasr/molokai"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-dap"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["papercolor-theme"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/papercolor-theme",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/papercolor-theme",
     url = "https://github.com/NLKNguyen/papercolor-theme"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["rose-pine"] = {
-    config = { "\27LJ\2\n\v\0\3\3\0\0\0\1K\0\1\0ö\5\1\0\4\0\17\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0024\3\0\0=\3\n\0024\3\0\0=\3\v\0023\3\f\0=\3\r\2B\0\2\0016\0\14\0009\0\15\0'\2\16\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\21before_highlight\0\21highlight_groups\fpalette\vgroups\1\0\25\14git_stage\tiris\15git_rename\tpine\14git_merge\tiris\15git_ignore\nmuted\14git_dirty\trose\15git_delete\tlove\15git_change\trose\fgit_add\tfoam\tinfo\tfoam\twarn\tgold\ttodo\trose\tnote\tpine\nerror\tlove\thint\tiris\npanel\fsurface\tlink\tiris\vborder\nmuted\ah6\tfoam\ah5\tpine\ah4\tgold\ah3\trose\ah2\tfoam\ah1\tiris\18git_untracked\vsubtle\rgit_text\trose\vstyles\1\0\3\17transparency\1\vitalic\1\tbold\2\venable\1\0\3\15migrations\2\22legacy_highlights\2\rterminal\2\1\0\n%extend_background_behind_borders\2\25dim_inactive_windows\1\21highlight_groups\0\17dark_variant\tmain\21before_highlight\0\fvariant\tauto\fpalette\0\vgroups\0\vstyles\0\venable\0\nsetup\14rose-pine\frequire\0" },
+    config = { "\27LJ\2\n\v\0\3\3\0\0\0\1K\0\1\0±\5\1\0\4\0\17\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0024\3\0\0=\3\n\0024\3\0\0=\3\v\0023\3\f\0=\3\r\2B\0\2\0016\0\14\0009\0\15\0'\2\16\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\21before_highlight\0\21highlight_groups\fpalette\vgroups\1\0\25\ah4\tgold\ah3\trose\ah2\tfoam\ah1\tiris\15git_change\trose\18git_untracked\vsubtle\rgit_text\trose\14git_stage\tiris\15git_rename\tpine\14git_merge\tiris\15git_ignore\nmuted\14git_dirty\trose\tinfo\tfoam\nerror\tlove\fgit_add\tfoam\15git_delete\tlove\twarn\tgold\ttodo\trose\tnote\tpine\thint\tiris\npanel\fsurface\tlink\tiris\vborder\nmuted\ah6\tfoam\ah5\tpine\vstyles\1\0\3\vitalic\1\tbold\2\17transparency\1\venable\1\0\3\22legacy_highlights\2\rterminal\2\15migrations\2\1\0\4%extend_background_behind_borders\2\25dim_inactive_windows\1\17dark_variant\tmain\fvariant\tauto\nsetup\14rose-pine\frequire\0" },
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/rose-pine",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
   sonokai = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/sonokai",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/sonokai",
     url = "https://github.com/sainnhe/sonokai"
   },
   ["spacemacs-theme.vim"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/spacemacs-theme.vim",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/spacemacs-theme.vim",
     url = "https://github.com/colepeters/spacemacs-theme.vim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-code-dark"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/vim-code-dark",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/vim-code-dark",
     url = "https://github.com/tomasiser/vim-code-dark"
   },
   ["vim-colors-xcode"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/vim-colors-xcode",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/vim-colors-xcode",
     url = "https://github.com/arzg/vim-colors-xcode"
   },
   ["vim-colorschemes"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/vim-colorschemes",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/vim-colorschemes",
     url = "https://github.com/flazz/vim-colorschemes"
   },
   ["vim-floaterm"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
   },
   ["vim-one"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/vim-one",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/vim-one",
     url = "https://github.com/rakr/vim-one"
   },
   ["vim-startify"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/vim-startify",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/vim-startify",
     url = "https://github.com/mhinz/vim-startify"
   },
   ["vim-vsnip"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
   },
   vimspector = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/vimspector",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/vimspector",
     url = "https://github.com/puremourning/vimspector"
   },
   vimwiki = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/vimwiki",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/vimwiki",
     url = "https://github.com/vimwiki/vimwiki"
   },
   ["vscode.nvim"] = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/vscode.nvim",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/vscode.nvim",
     url = "https://github.com/Mofiqul/vscode.nvim"
   },
   yaflandia = {
     loaded = true,
-    path = "/Users/r_hasan/.local/share/nvim/site/pack/packer/start/yaflandia",
+    path = "/home/laboratory/.local/share/nvim/site/pack/packer/start/yaflandia",
     url = "https://github.com/JBakamovic/yaflandia"
   }
 }
@@ -290,7 +290,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n\v\0\3\3\0\0\0\1K\0\1\0ö\5\1\0\4\0\17\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0024\3\0\0=\3\n\0024\3\0\0=\3\v\0023\3\f\0=\3\r\2B\0\2\0016\0\14\0009\0\15\0'\2\16\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\21before_highlight\0\21highlight_groups\fpalette\vgroups\1\0\25\14git_stage\tiris\15git_rename\tpine\14git_merge\tiris\15git_ignore\nmuted\14git_dirty\trose\15git_delete\tlove\15git_change\trose\fgit_add\tfoam\tinfo\tfoam\twarn\tgold\ttodo\trose\tnote\tpine\nerror\tlove\thint\tiris\npanel\fsurface\tlink\tiris\vborder\nmuted\ah6\tfoam\ah5\tpine\ah4\tgold\ah3\trose\ah2\tfoam\ah1\tiris\18git_untracked\vsubtle\rgit_text\trose\vstyles\1\0\3\17transparency\1\vitalic\1\tbold\2\venable\1\0\3\15migrations\2\22legacy_highlights\2\rterminal\2\1\0\n%extend_background_behind_borders\2\25dim_inactive_windows\1\21highlight_groups\0\17dark_variant\tmain\21before_highlight\0\fvariant\tauto\fpalette\0\vgroups\0\vstyles\0\venable\0\nsetup\14rose-pine\frequire\0", "config", "rose-pine")
+try_loadstring("\27LJ\2\n\v\0\3\3\0\0\0\1K\0\1\0±\5\1\0\4\0\17\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0024\3\0\0=\3\n\0024\3\0\0=\3\v\0023\3\f\0=\3\r\2B\0\2\0016\0\14\0009\0\15\0'\2\16\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\21before_highlight\0\21highlight_groups\fpalette\vgroups\1\0\25\ah4\tgold\ah3\trose\ah2\tfoam\ah1\tiris\15git_change\trose\18git_untracked\vsubtle\rgit_text\trose\14git_stage\tiris\15git_rename\tpine\14git_merge\tiris\15git_ignore\nmuted\14git_dirty\trose\tinfo\tfoam\nerror\tlove\fgit_add\tfoam\15git_delete\tlove\twarn\tgold\ttodo\trose\tnote\tpine\thint\tiris\npanel\fsurface\tlink\tiris\vborder\nmuted\ah6\tfoam\ah5\tpine\vstyles\1\0\3\vitalic\1\tbold\2\17transparency\1\venable\1\0\3\22legacy_highlights\2\rterminal\2\15migrations\2\1\0\4%extend_background_behind_borders\2\25dim_inactive_windows\1\17dark_variant\tmain\fvariant\tauto\nsetup\14rose-pine\frequire\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
 
 _G._packer.inside_compile = false

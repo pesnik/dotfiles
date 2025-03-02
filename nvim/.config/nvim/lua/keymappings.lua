@@ -149,3 +149,8 @@ vim.cmd([[
 
 
 vim.api.nvim_set_keymap('n', '<Leader>G', ':Gitsign toggle_signs<CR>', {})
+
+vim.keymap.set('n', '<F2>', function()
+      vim.opt.paste = not vim.opt.paste:get()
+        print("Paste mode: " .. (vim.opt.paste:get() and "ON" or "OFF"))
+    end, { noremap = true, desc = 'Toggle paste mode with feedback' })
