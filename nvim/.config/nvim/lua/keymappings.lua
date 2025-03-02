@@ -50,7 +50,7 @@ vim.api.nvim_set_keymap('n', '<C-l><C-n>', ':set nu!<cr> :set rnu!<cr>', noremap
 -- nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 -- Using Lua functions
-vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>lua require(\'telescope.builtin\').find_files()<cr>', noremapTruesilentTrue)
+vim.api.nvim_set_keymap('n', '<leader>ff', "<cmd>lua require(\'telescope.builtin\').find_files({ find_command = { 'rg', '--files', '--iglob', '!.git', '--hidden' } })<cr>", noremapTruesilentTrue)
 vim.api.nvim_set_keymap('n', '<leader>fg', '<cmd>lua require(\'telescope.builtin\').live_grep()<cr>', noremapTruesilentTrue)
 vim.api.nvim_set_keymap('n', '<leader>fb', '<cmd>lua require(\'telescope.builtin\').buffers()<cr>', noremapTruesilentTrue)
 vim.api.nvim_set_keymap('n', '<leader>fh', '<cmd>lua require(\'telescope.builtin\').help_tags()<cr>', noremapTruesilentTrue)
