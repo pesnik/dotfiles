@@ -109,3 +109,5 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # Created by `userpath` on 2025-02-20 16:14:32
 export PATH="$PATH:/Users/r_hasan/Library/Application Support/hatch/pythons/3.11/python/bin"
+export GOPATH=$HOME/tools/go
+export PATH=$PATH:$GOPATH/bin

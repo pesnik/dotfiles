@@ -5,6 +5,7 @@ require("settings")
 
 require("language-servers.init")
 require("language-servers.python-lsp")
+require("language-servers.gopls")
 require("language-servers.bash-lsp")
 require("language-servers.ts-lsp")
 
