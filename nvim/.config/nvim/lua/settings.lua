@@ -17,3 +17,4 @@ vim.opt.tabstop = 4                     -- Number of spaces tabs count for
 vim.opt.termguicolors = true            -- True color support
 vim.opt.wildmode = {'list', 'longest'}  -- Command-line completion mode
 vim.opt.wrap = false                    -- Disable line wrap
+vim.opt.list = false
