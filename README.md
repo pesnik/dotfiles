@@ -71,7 +71,7 @@ Here's where various tools expect their configuration files:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/username/dotfiles.git ~/.dotfiles
+git clone https://github.com/pesnik/dotfiles.git ~/.dotfiles
 ```
 
 2. Install GNU Stow:
