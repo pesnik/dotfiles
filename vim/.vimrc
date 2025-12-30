@@ -6,15 +6,8 @@ Plug 'vim-scripts/0x7A69_dark.vim'
 
 call plug#end()
 
-<<<<<<< Updated upstream
-" set t_Co=256
-" set termguicolors
-
-colorscheme gruvbox
-=======
 set termguicolors
 set t_Co=256
->>>>>>> Stashed changes
 set background=dark
 " colorscheme gruvbox
 colorscheme 0x7A69_dark
