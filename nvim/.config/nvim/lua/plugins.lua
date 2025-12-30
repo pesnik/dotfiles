@@ -10,6 +10,7 @@ return require("packer").startup(function(use)
 
 	-- file explorer
 	use("kyazdani42/nvim-tree.lua")
+    use("ggml-org/llama.vim")
 
 	-- lsp
 	use("neovim/nvim-lspconfig")
