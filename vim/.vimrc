@@ -12,6 +12,7 @@ set background=dark
 " colorscheme gruvbox
 colorscheme 0x7A69_dark
 
+" llama-server -hf ggml-org/Qwen2.5-Coder-1.5B-Q8_0-GGUF --host 0.0.0.0 --port 8484 -ngl 99 -fa on -ub 1024 -b 1024 --ctx-size 0 --cache-reuse 256
 let g:llama_config = {
 \   'endpoint': 'http://127.0.0.1:8484/infill',
 \   'n_prefix': 256,
