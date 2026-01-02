@@ -6,6 +6,7 @@ Plug 'vim-scripts/0x7A69_dark.vim'
 
 call plug#end()
 
+set exrc
 set termguicolors
 set t_Co=256
 set background=dark
