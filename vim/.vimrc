@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug 'ggml-org/llama.vim'
 Plug 'vim-scripts/0x7A69_dark.vim'
+Plug 'NLKNguyen/papercolor-theme'
 
 call plug#end()
 
