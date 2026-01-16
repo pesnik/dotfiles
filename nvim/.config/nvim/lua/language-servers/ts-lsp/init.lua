@@ -1,12 +1,10 @@
-local opts = { noremap=true, silent=true }
--- Use an on_attach function to only map the following keys
--- after the language server attaches to the current buffer
+-- On Attach Function (key mappings and setup)
+local opts = { noremap = true, silent = true }
 local on_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
-  -- Mappings.
-  -- See `:help vim.lsp.*` for documentation on any of the below functions
+  -- Key mappings
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
@@ -22,10 +20,14 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
-require'lspconfig'.ts_ls.setup{
+-- Configure TypeScript LSP (tsserver)
+vim.lsp.config("tsserver", {
   on_attach = on_attach,
   flags = {
-    -- This will be the default in neovim 0.7+
-    debounce_text_changes = 150,
-  }
-}
+    debounce_text_changes = 150, -- Ensure efficient handling of large codebases
+  },
+})
+
+-- Enable TypeScript LSP server
+vim.lsp.enable("tsserver")
+

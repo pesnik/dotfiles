@@ -1,6 +1,6 @@
 require("plugins")
 require("keymappings")
-require("nv-compe")
+-- require("nv-compe")
 require("settings")
 
 require("language-servers.init")
@@ -25,24 +25,24 @@ require("config.gitSign")
 vim.g.llama_config = {
   -- Server endpoint
   endpoint = 'http://127.0.0.1:8484/completion',
-  
+
   -- Auto-completion settings
-  auto_fim = true,              -- Enable automatic suggestions
-  show_info = true,             -- Show performance stats
-  
+  auto_fim = true,        -- Enable automatic suggestions
+  show_info = true,       -- Show performance stats
+
   -- Generation parameters (CPU-optimized)
-  max_tokens = 32,              -- Fewer tokens for faster CPU inference
-  n_prefix = 128,               -- Context before cursor (reduced for CPU)
-  n_suffix = 32,                -- Context after cursor (reduced for CPU)
-  timeout_ms = 5000,            -- 5 second timeout (CPU needs more time)
-  
-  -- Context management (CPU-optimized)
-  max_context = 8192,           -- Smaller context for CPU
-  ring_n_chunks = 32,           -- Fewer chunks for CPU
-  
+  max_tokens = 32,        -- Fewer tokens for faster CPU inference
+  n_prefix = 128,         -- Context before cursor
+  n_suffix = 32,          -- Context after cursor
+  timeout_ms = 5000,      -- 5 second timeout
+
+  -- Context management
+  max_context = 8192,
+  ring_n_chunks = 32,
+
   -- Keymaps
-  keymap_toggle = '<C-f>',      -- Toggle suggestions with Ctrl+F
-  keymap_accept_full = '<Tab>', -- Accept full suggestion with Tab
-  keymap_accept_line = '<S-Tab>', -- Accept first line with Shift+Tab
+  keymap_toggle = '<C-f>',
+  keymap_fim_accept_full = '<Tab>',
+  keymap_fim_accept_line = '<S-Tab>',
 }
 
