@@ -24,7 +24,7 @@ require("config.gitSign")
 
 vim.g.llama_config = {
   -- Server endpoint
-  endpoint = 'http://127.0.0.1:8484/completion',
+  endpoint_fim = 'http://127.0.0.1:8484/completion',
 
   -- Auto-completion settings
   auto_fim = true,        -- Enable automatic suggestions
