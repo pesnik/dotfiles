@@ -111,3 +111,34 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 export PATH="$PATH:/Users/r_hasan/Library/Application Support/hatch/pythons/3.11/python/bin"
 export GOPATH=$HOME/tools/go
 export PATH=$PATH:$GOPATH/bin
+
+# Angreal shell completion
+fpath=(/Users/r_hasan/.zsh_completions $fpath)
+autoload -U compinit && compinit
+# START: Added by Updated Airflow Breeze autocomplete setup
+source /Users/r_hasan/Development/airflow/dev/breeze/autocomplete/breeze-complete-zsh.sh
+# END: Added by Updated Airflow Breeze autocomplete setup
+
+# pnpm
+export PNPM_HOME="/Users/r_hasan/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+. "$HOME/.local/bin/env"
+
+# opencode
+export PATH=/Users/r_hasan/.opencode/bin:$PATH
+export OLLAMA_HOST=0.0.0.0:11434
+
+# Added by Antigravity
+export PATH="/Users/r_hasan/.antigravity/antigravity/bin:$PATH"
+
+# Homebrew + dev tools (permanent PATH for Claude Code / non-login shells)
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/bin:$PATH"
+
+# Node via NVM default (resolves to latest installed matching default alias)
+# This ensures node/npm/npx are on PATH for non-interactive shells (Claude Code, etc.)
+export PATH="$HOME/.nvm/versions/node/v24.14.0/bin:$PATH"
