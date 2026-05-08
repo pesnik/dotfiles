@@ -32,9 +32,37 @@
 # MAPLE MONO FONT SETTING
 font-family = "Maple Mono NF"
 font-size = 16
-# Optional: Enable ligatures (Maple Mono is famous for them)
-font-feature = "calt"
-font-feature = "liga"
+
+# Ligatures
+font-feature = calt
+font-feature = liga
+
+# Character shape improvements
+font-feature = cv02   # alternative 'a' with top arm
+font-feature = cv03   # 'i' without left bottom bar
+font-feature = cv05   # double-story 'g'
+font-feature = cv09   # '7' with middle bar
+font-feature = cv10   # 'Z'/'z' with middle bar
+font-feature = ss05   # thinner backslash in escape sequences
+font-feature = zero   # dot-style zero
+
+# Extra ligatures
+font-feature = ss07   # relaxed >> >>> ligatures
+font-feature = ss08   # double-headed/reverse arrows
+font-feature = ss09   # ~= as not-equal
+font-feature = ss10   # =~ and !~ ligatures
+font-feature = ss11   # |= /= ?= &= ligatures
+
+# Variable font weight (slightly bolder than default 400)
+font-variation = wght=420
+
+# Rendering
+font-thicken = true
+font-thicken-strength = 30
+alpha-blending = linear-corrected
+
+# Cell spacing
+adjust-cell-height = 20%
 
 
 
