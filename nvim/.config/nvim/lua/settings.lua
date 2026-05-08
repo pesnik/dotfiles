@@ -1,3 +1,7 @@
+if vim.fn.has('gui_running') == 1 or vim.g.neovide then
+  vim.opt.guifont = "Maple Mono NF:h16"
+end
+
 vim.opt.expandtab = true                -- Use spaces instead of tabs
 vim.opt.hidden = true                   -- Enable background buffers
 vim.opt.ignorecase = true               -- Ignore case

@@ -13,6 +13,10 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 
+if has('gui_running')
+  set guifont=Maple\ Mono\ NF:h16
+endif
+
 set exrc
 " set termguicolors
 " set t_Co=256
