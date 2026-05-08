@@ -16,7 +16,7 @@ local function gruvbox_material_setup()
   vim.g.gruvbox_material_diagnostic_text_highlight = 1
   vim.g.gruvbox_material_diagnostic_virtual_text = 'colored'
   -- vim.g.gruvbox_material_cursor = 'yellow'
-  -- vim.g.gruvbox_material_enable_italic = 1
+  vim.g.gruvbox_material_enable_italic = 1
   -- vim.g.gruvbox_material_transparent_background = 1
   vim.cmd([[colorscheme gruvbox-material]])
   -- hi! Normal  ctermbg=NONE guibg=NONE
@@ -117,7 +117,7 @@ local function spacemacs()
   vim.cmd([[colorscheme spacemacs-theme]])
 end
 -- xcode()
--- gruvbox_material_setup()
+gruvbox_material_setup()
 -- papercolor_setup()
 -- vim.cmd("colorscheme rose-pine")
 -- gruvbox_setup()
@@ -134,3 +134,19 @@ end
 -- yanflandia()
 -- spacemacs()
 -- myFav();
+
+-- Italic keyword highlights so Maple Mono shows its cursive f/l glyphs
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "*",
+  callback = function()
+    local italic = { italic = true }
+    vim.api.nvim_set_hl(0, "@keyword",             italic)
+    vim.api.nvim_set_hl(0, "@keyword.function",    italic)
+    vim.api.nvim_set_hl(0, "@keyword.return",      italic)
+    vim.api.nvim_set_hl(0, "@keyword.repeat",      italic)
+    vim.api.nvim_set_hl(0, "@keyword.conditional", italic)
+    vim.api.nvim_set_hl(0, "@keyword.import",      italic)
+    vim.api.nvim_set_hl(0, "Keyword",              italic)
+    vim.api.nvim_set_hl(0, "Statement",            italic)
+  end,
+})
