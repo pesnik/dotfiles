@@ -1,4 +1,5 @@
 nvim/.config/nvim/plugin/
+.DS_Store
 
 # pi coding agent — never track secrets/caches/session data
 pi/.pi/agent/auth.json

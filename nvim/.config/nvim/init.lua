@@ -12,15 +12,14 @@ require("language-servers.ts-lsp")
 require("config.colorscheme")
 require("config.tree-sitter")
 require("config.vimwiki")
-require("config.vimspector")
 require("config.lualine")
-require("config.diffview")
+require("config.dap")
+require("config.neogit")
 -- require('config.airline')
 
 require("fun.plugins")
 
 require("config.komentary")
-require("config.gitSign")
 
 vim.g.llama_config = {
   -- Server endpoint

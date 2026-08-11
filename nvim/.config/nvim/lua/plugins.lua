@@ -160,11 +160,17 @@ return require("packer").startup(function(use)
         run = ":TSUpdate"
     }
 
-	use("sindrets/diffview.nvim")
-
 	-- telescope
 	use("nvim-telescope/telescope.nvim")
 	use("nvim-lua/plenary.nvim")
+
+	-- git
+	use({
+		"NeogitOrg/neogit",
+		requires = {
+			"nvim-lua/plenary.nvim",       -- required
+		},
+	})
 
 	-- CP
 	use("p00f/cphelper.nvim")
@@ -173,17 +179,14 @@ return require("packer").startup(function(use)
 	-- vimwiki
 	use("vimwiki/vimwiki")
 
-	-- debugger
-	use("puremourning/vimspector")
+	-- debugger (dap works without Neovim python3 build)
 	use("mfussenegger/nvim-dap")
+	use("rcarriga/nvim-dap-ui")
+	use("mfussenegger/nvim-dap-virtual-text")
 
 	-- floatterm
-	use("voldikss/vim-floaterm")
-
 	-- comment
 	use("b3nj5m1n/kommentary")
-
-	use("lewis6991/gitsigns.nvim")
 	-- ******************************* FUN ******************************************
 	use("mhinz/vim-startify")
 	use("danilamihailov/beacon.nvim")

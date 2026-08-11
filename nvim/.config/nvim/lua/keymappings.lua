@@ -80,29 +80,16 @@ vim.api.nvim_set_keymap('n', '<leader>t', ':tabnew<CR>', noremapTruesilentTrue)
 vim.api.nvim_set_keymap('n', '<C-Left>', ':tabprev<CR>', noremapTruesilentTrue)
 vim.api.nvim_set_keymap('n', '<C-Right>', ':tabnext<CR>', noremapTruesilentTrue)
 
--- vimspector
-vim.api.nvim_set_keymap('n', '<Leader>sl', ':call vimspector#Launch()<CR>', noremapTruesilentTrue)
-vim.api.nvim_set_keymap('n', '<Leader>sr', ':call vimspector#Reset()<CR>', noremapTruesilentTrue)
-vim.api.nvim_set_keymap('n', '<Leader>sc', ':call vimspector#Continue()<CR>', noremapTruesilentTrue)
-
-vim.api.nvim_set_keymap('n', '<Leader>sb', ':call vimspector#ToggleBreakpoint()<CR>', noremapTruesilentTrue)
-vim.api.nvim_set_keymap('n', '<Leader>sB', ':call vimspector#ClearBreakpoints()<CR>', noremapTruesilentTrue)
-
--- nnoremap <Leader>dd :call vimspector#Launch()<CR>
--- nnoremap <Leader>de :call vimspector#Reset()<CR>
--- nnoremap <Leader>dc :call vimspector#Continue()<CR>
--- 
--- nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
--- nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
-
-vim.api.nvim_set_keymap('n', '<Leader>sR', '<Plug>VimspectorRestart', {})
-vim.api.nvim_set_keymap('n', '<Leader>so', '<Plug>VimspectorStepOut', {})
-vim.api.nvim_set_keymap('n', '<Leader>si', '<Plug>VimspectorStepInto', {})
-vim.api.nvim_set_keymap('n', '<Leader>sO', '<Plug>VimspectorStepOver', {})
--- nmap <Leader>dk <Plug>VimspectorRestart
--- nmap <Leader>dh <Plug>VimspectorStepOut
--- nmap <Leader>dl <Plug>VimspectorStepInto
--- nmap <Leader>dj <Plug>VimspectorStepOver
+-- dap (debugger adapter protocol — works without Neovim python3 build)
+vim.api.nvim_set_keymap('n', '<Leader>dl', ':lua require("dap").continue()<CR>', noremapTruesilentTrue)      -- launch / continue
+vim.api.nvim_set_keymap('n', '<Leader>db', ':lua require("dap").toggle_breakpoint()<CR>', noremapTruesilentTrue)   -- toggle breakpoint
+vim.api.nvim_set_keymap('n', '<Leader>dB', ':lua require("dap").clear_breakpoints()<CR>', noremapTruesilentTrue)   -- clear all breakpoints
+vim.api.nvim_set_keymap('n', '<Leader>di', ':lua require("dap").step_into()<CR>', noremapTruesilentTrue)            -- step into
+vim.api.nvim_set_keymap('n', '<Leader>do', ':lua require("dap").step_over()<CR>', noremapTruesilentTrue)            -- step over
+vim.api.nvim_set_keymap('n', '<Leader>dO', ':lua require("dap").step_out()<CR>', noremapTruesilentTrue)            -- step out
+vim.api.nvim_set_keymap('n', '<Leader>dn', ':lua require("dap").step_back()<CR>', noremapTruesilentTrue)            -- step back
+vim.api.nvim_set_keymap('n', '<Leader>dr', ':lua require("dap").repl.open()<CR>', noremapTruesilentTrue)            -- open repl
+vim.api.nvim_set_keymap('n', '<Leader>dv', ':lua require("dapui").toggle()<CR>', noremapTruesilentTrue)              -- dap-ui panel
 
 
 -- FLOAT TERM
@@ -149,7 +136,8 @@ vim.cmd([[
 ]])
 
 
-vim.api.nvim_set_keymap('n', '<Leader>G', ':Gitsign toggle_signs<CR>', {})
+-- Neogit
+vim.api.nvim_set_keymap('n', '<Leader>G', ':Neogit<CR>', { noremap = true, silent = true })
 
 vim.keymap.set('n', '<F2>', function()
       vim.opt.paste = not vim.opt.paste:get()
