@@ -1,0 +1,17 @@
+{
+  "lastChangelogVersion": "0.80.6",
+  "defaultProvider": "openrouter",
+  "defaultModel": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "defaultThinkingLevel": "medium",
+  "theme": "dark",
+  "packages": [
+    "npm:pi-mcp-adapter",
+    "npm:@gotgenes/pi-permission-system",
+    "git:github.com/pesnik/pi-teradata",
+    "git:github.com/pesnik/pi-pesnik"
+  ],
+  "enabledModels": [
+    "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free",
+    "banglalink-llm/coding-agent"
+  ]
+}

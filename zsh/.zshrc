@@ -127,6 +127,9 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# pi coding agent secrets (untracked, machine-local)
+[ -f "$HOME/.pi/secrets.env" ] && source "$HOME/.pi/secrets.env"
+
 . "$HOME/.local/bin/env"
 
 # opencode

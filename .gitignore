@@ -1,1 +1,11 @@
 nvim/.config/nvim/plugin/
+
+# pi coding agent — never track secrets/caches/session data
+pi/.pi/agent/auth.json
+pi/.pi/agent/mcp.json
+pi/.pi/agent/mcp.json.bak
+pi/.pi/agent/mcp-cache.json
+pi/.pi/agent/sessions/
+pi/.pi/agent/git/
+pi/.pi/agent/npm/
+pi/.pi/secrets.env
