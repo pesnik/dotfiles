@@ -65,7 +65,7 @@ font-thicken-strength = 30
 alpha-blending = linear-corrected
 
 # Transparency (lets tmux's bg=default / rose-pine's bar_bg_disable show through)
-background-opacity = 0.85
+background-opacity = 0
 background-blur = true
 
 # Cell spacing
