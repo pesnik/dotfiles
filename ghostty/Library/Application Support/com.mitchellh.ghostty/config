@@ -26,12 +26,15 @@
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
 # font-family = Iosevka
-# font-family = "Jetbrain Mono"
+font-family = "Jetbrain Mono"
 
 
 # MAPLE MONO FONT SETTING
 font-family = "Maple Mono NF"
-font-size = 16
+# font-family = Literata
+# font-family = Departure Mono
+# font-family = Fira Code
+font-size = 14
 
 # Ligatures
 font-feature = calt
@@ -66,14 +69,20 @@ background-opacity = 0.85
 background-blur = true
 
 # Cell spacing
-adjust-cell-height = 20%
+# adjust-cell-height = 20%
 
 
 
 
 # font-family = "Lantinghei TC Demibold"
 # font-size = 16
-theme = Catppuccin Mocha
+# theme = Catppuccin Mocha
+# theme = Gruvbox Dark
+# theme = Github Dark
+# theme = Zenburn
+# theme = Matte Black
+theme = Rose Pine 
+
 # window-padding-x = 2
 #
 # # Spacing around the equals sign does not matter.
